@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="portaldrip.css">
+    <title>Create Mathematics Exercise</title>
+</head>
+<body>
+    <h2>Create Mathematics Exercise</h2>
+    <form action="creatematteexercise.php" method="post">
+        <input type="hidden" name="subject" value="matteoppgaver">
+        <label for="tittel">Exercise Title:</label>
+        <input type="text" name="tittel" id="tittel" required>
+        <br><br>
+        <label for="oppgavetekst">Exercise Text:</label>
+        <textarea name="oppgavetekst" id="oppgavetekst" rows="5" required></textarea>
+        <br><br>
+        <input type="submit" value="Create Exercise">
+    </form>
+</body>
+</html>
